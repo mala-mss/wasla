@@ -1,0 +1,87 @@
+.me {
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+  flex-direction: column;
+  width: 49%;
+  display: flex;
+  
+}
+
+.me h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.me form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.me input[type="text"],
+.me label {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+.me input[type="submit"] {
+  background-color: #a18cd1;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.me input[type="submit"]:hover {
+  background-color: #a18cd1;
+
+}
+
+/* edit lesson */
+.me a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: rgba(157, 130, 182, 0.611);
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.me a:hover {
+    background-color:#a18cd1;;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.search-bar{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 600px;
+}
+.container-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

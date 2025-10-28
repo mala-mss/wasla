@@ -1,0 +1,378 @@
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f9f6fd 0%, #e8e0f5 100%);
+  color: #333;
+  direction: rtl;
+}
+
+/* Header */
+.main_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f5ff 100%);
+  padding: 15px 30px;
+  color: #6a0dad;
+  box-shadow: 0 8px 32px rgba(106, 13, 173, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-radius: 16px;
+  margin: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Header logo */
+.logo_container {
+  display: flex;
+  align-items: center;
+}
+
+.logo_img {
+  height: 70px;
+  width: 200px;
+  margin-right: 50px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.logo_img:hover {
+  transform: scale(1.05);
+}
+
+.logo-text {
+  padding: 0 10px;
+  font-size: 40px;
+  font-family: 'Lateef', serif;
+  font-weight: bold;
+  color: #674282;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #6a0dad;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.1);
+  transform: translateY(-2px);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: linear-gradient(90deg, #6a0dad, #8b5cf6);
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.login-btn {
+  background: white;
+  color: #6a0dad;
+  border: 2px solid #6a0dad;
+  box-shadow: 0 4px 15px rgba(106, 13, 173, 0.2);
+}
+
+.login-btn:hover {
+  background: #6a0dad;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(106, 13, 173, 0.3);
+}
+
+.register-btn {
+  background: linear-gradient(135deg, #6a0dad 0%, #8b5cf6 100%);
+  border: 2px solid transparent;
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(106, 13, 173, 0.3);
+}
+
+.register-btn:hover {
+  background: linear-gradient(135deg, #5a00c6 0%, #7c3aed 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(106, 13, 173, 0.4);
+}
+
+/* Main content */
+.main_content {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.welcome {
+  flex: 1;
+  padding: 2rem;
+  text-align: right;
+}
+
+.welcome h2 {
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6a0dad 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.welcome p {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.hero_image {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero_image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(106, 13, 173, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.hero_image img:hover {
+  transform: scale(1.02) rotate(1deg);
+}
+
+/* Role selection */
+.role_selection {
+  margin-top: 80px;
+  padding: 40px 20px;
+}
+
+.role_selection h3 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #6a0dad;
+  font-weight: 600;
+}
+
+.role_box {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.role_card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f5ff 100%);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  color: #6a0dad;
+  padding: 30px 50px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  box-shadow: 0 10px 40px rgba(106, 13, 173, 0.15);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.role_card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #6a0dad, #8b5cf6);
+  z-index: -1;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.role_card:hover {
+  color: white;
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 20px 60px rgba(106, 13, 173, 0.3);
+}
+
+.role_card:hover::before {
+  opacity: 1;
+}
+
+/* Info sections */
+.info_section {
+  margin: 80px auto;
+  max-width: 800px;
+  padding: 40px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f5ff 100%);
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(106, 13, 173, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.info_section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(135deg, #6a0dad 0%, #8b5cf6 100%);
+}
+
+.info_section h2 {
+  margin-bottom: 20px;
+  color: #6a0dad;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.info_section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.info_section a {
+  color: #6a0dad;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.info_section a:hover {
+  color: #8b5cf6;
+  text-decoration: underline;
+}
+
+/* Footer */
+.main_footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #6a0dad 0%, #8b5cf6 100%);
+  color: white;
+  margin-top: 80px;
+  font-size: 1.1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .welcome {
+    text-align: center;
+  }
+
+  .welcome h2 {
+    font-size: 2.5rem;
+  }
+
+  .welcome p {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .role_box {
+    gap: 20px;
+  }
+
+  .role_card {
+    padding: 20px 30px;
+    font-size: 1.2rem;
+  }
+
+  .main_header {
+    padding: 10px 15px;
+    margin: 10px;
+  }
+
+  .logo_img {
+    height: 50px;
+    width: 150px;
+    margin-right: 20px;
+  }
+}

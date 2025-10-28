@@ -1,0 +1,80 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body background */
+body {
+  height: 100vh;
+  background: URL(login\ gradient.jpg);
+  background-size: cover; /* Purple gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: 'Tajawal', sans-serif;
+}
+
+/* Login box */
+.login-box {
+  background: #ffffffdd;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 24px;
+  color: #6a0dad;
+}
+
+/* Inputs */
+ input[type="password"], input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #090909;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+
+input:focus {
+  border-color: #a18cd1;
+}
+
+/* Button */
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #915fc3;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a18cd1;
+}
+
+/* Extra note */
+.note {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+.note a {
+  color: #6a0dad;
+  text-decoration: none;
+}

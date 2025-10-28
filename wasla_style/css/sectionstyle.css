@@ -1,0 +1,12 @@
+.b{
+  width: 70%;
+  padding: 12px;
+  background-color: #a18cd1;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background-color 0.3s ease;
+}
